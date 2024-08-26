@@ -1,0 +1,125 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. Alice Johnson",
+        "subject": "Computer Science",
+        "stars": 4,
+        "review": "Great professor! Very clear explanations and always willing to help."
+      },
+      {
+        "professor": "Dr. Bob Smith",
+        "subject": "Mathematics",
+        "stars": 3,
+        "review": "The class was challenging, but Dr. Smith provided a lot of resources."
+      },
+      {
+        "professor": "Dr. Carol White",
+        "subject": "Physics",
+        "stars": 5,
+        "review": "Engaging lectures and very approachable. Best physics professor I've had."
+      },
+      {
+        "professor": "Dr. David Brown",
+        "subject": "Chemistry",
+        "stars": 2,
+        "review": "Content was difficult to follow, and the professor was often unclear."
+      },
+      {
+        "professor": "Dr. Emily Davis",
+        "subject": "Biology",
+        "stars": 4,
+        "review": "Very knowledgeable and passionate about the subject. A great learning experience."
+      },
+      {
+        "professor": "Dr. Frank Miller",
+        "subject": "History",
+        "stars": 3,
+        "review": "Interesting lectures, but exams were tough."
+      },
+      {
+        "professor": "Dr. Grace Wilson",
+        "subject": "English Literature",
+        "stars": 5,
+        "review": "Amazing professor! Really brought the texts to life."
+      },
+      {
+        "professor": "Dr. Henry Moore",
+        "subject": "Economics",
+        "stars": 2,
+        "review": "The material was dry and the lectures were not engaging."
+      },
+      {
+        "professor": "Dr. Isabella Taylor",
+        "subject": "Political Science",
+        "stars": 4,
+        "review": "Very insightful and knowledgeable. The class discussions were great."
+      },
+      {
+        "professor": "Dr. Jack Anderson",
+        "subject": "Philosophy",
+        "stars": 5,
+        "review": "Challenging but rewarding course. Dr. Anderson is a fantastic instructor."
+      },
+      {
+        "professor": "Dr. Karen Thomas",
+        "subject": "Sociology",
+        "stars": 3,
+        "review": "The course was decent, but the grading was a bit harsh."
+      },
+      {
+        "professor": "Dr. Larry Jackson",
+        "subject": "Anthropology",
+        "stars": 4,
+        "review": "A very interesting course, and Dr. Jackson is a great lecturer."
+      },
+      {
+        "professor": "Dr. Megan Harris",
+        "subject": "Art History",
+        "stars": 5,
+        "review": "Wonderful professor with a deep knowledge of art. The course was fascinating."
+      },
+      {
+        "professor": "Dr. Nathan Lee",
+        "subject": "Psychology",
+        "stars": 4,
+        "review": "Dr. Lee is very knowledgeable and makes the course material engaging."
+      },
+      {
+        "professor": "Dr. Olivia Martin",
+        "subject": "Statistics",
+        "stars": 3,
+        "review": "The course was okay, but the professor's teaching style was a bit dry."
+      },
+      {
+        "professor": "Dr. Patrick Clark",
+        "subject": "Environmental Science",
+        "stars": 4,
+        "review": "A very informative course with a passionate professor."
+      },
+      {
+        "professor": "Dr. Quentin Lewis",
+        "subject": "Engineering",
+        "stars": 2,
+        "review": "The course was very difficult, and the professor was not very approachable."
+      },
+      {
+        "professor": "Dr. Rachel Young",
+        "subject": "Business Administration",
+        "stars": 5,
+        "review": "Excellent professor! Very clear and helpful throughout the course."
+      },
+      {
+        "professor": "Dr. Samuel King",
+        "subject": "Geography",
+        "stars": 3,
+        "review": "Decent course, but the lectures could have been more engaging."
+      },
+      {
+        "professor": "Dr. Tina Martinez",
+        "subject": "Music Theory",
+        "stars": 4,
+        "review": "Dr. Martinez is very passionate about music and it shows in her teaching."
+      }
+    ]
+  }
+  
