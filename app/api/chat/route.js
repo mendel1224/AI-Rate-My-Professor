@@ -15,19 +15,17 @@ export async function POST(req) {
   })
   const index = pc.index('rag').namespace('ns1')
   const openai = new OpenAI()
-}
 
-// Process the user’s query
-const text = data[data.length - 1].content
-const embedding = await openai.embeddings.create({
-  model: 'text-embedding-3-small',
-  input: text,
-  encoding_format: 'float',
-})
+  // Process the user’s query
+  const text = data[data.length - 1].content
+  const embedding = await openai.embeddings.create({
+    model: 'text-embedding-3-small',
+    input: text,
+    encoding_format: 'float',
+  })
 
-
-// Query Pinecone
-const results = await index.query({
+  // Query Pinecone
+  const results = await index.query({
     topK: 5,
     includeMetadata: true,
     vector: embedding.data[0].embedding,
@@ -35,27 +33,27 @@ const results = await index.query({
 
   // Format the results
   let resultString = ''
-results.matches.forEach((match) => {
-  resultString += `
-  Returned Results:
-  Professor: ${match.id}
-  Review: ${match.metadata.stars}
-  Subject: ${match.metadata.subject}
-  Stars: ${match.metadata.stars}
-  \n\n`
-})
+  results.matches.forEach((match) => {
+    resultString += `
+    Returned Results:
+    Professor: ${match.id}
+    Review: ${match.metadata.review}
+    Subject: ${match.metadata.subject}
+    Stars: ${match.metadata.stars}
+    \n\n`
+  })
 
-// Prepare the OpenAI request
-const lastMessage = data[data.length - 1]
-const lastMessageContent = lastMessage.content + resultString
-const lastDataWithoutLastMessage = data.slice(0, data.length - 1)
+  // Prepare the OpenAI request
+  const lastMessage = data[data.length - 1]
+  const lastMessageContent = lastMessage.content + resultString
+  const lastDataWithoutLastMessage = data.slice(0, data.length - 1)
 
-// Send the request to OpenAI
-const completion = await openai.chat.completions.create({
+  // Send the request to OpenAI
+  const completion = await openai.chat.completions.create({
     messages: [
-      {role: 'system', content: systemPrompt},
+      { role: 'system', content: systemPrompt },
       ...lastDataWithoutLastMessage,
-      {role: 'user', content: lastMessageContent},
+      { role: 'user', content: lastMessageContent },
     ],
     model: 'gpt-4o-mini',
     stream: true,
@@ -81,3 +79,4 @@ const completion = await openai.chat.completions.create({
     },
   })
   return new NextResponse(stream)
+}
